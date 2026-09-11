@@ -1166,3 +1166,9 @@ footer strong {
         text-align: center;
     }
 }
+.logo {
+    width: 310px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
