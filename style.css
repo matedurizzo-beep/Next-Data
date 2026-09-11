@@ -1166,9 +1166,8 @@ footer strong {
         text-align: center;
     }
 }
-.logo {
-    width: 310px;
-    max-width: 80%;
+.logo img {
+    width: 280px;
     height: auto;
     display: block;
 }
