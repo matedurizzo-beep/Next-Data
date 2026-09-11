@@ -12,31 +12,42 @@
 
 <body>
 
-    <!-- NAVEGACIÓN -->
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
+
     <header>
 
-        <a href="#" class="logo">
-            <img src="logo-nexoradata.png" alt="NEXORADATA" class="logo">
+        <a href="#inicio" class="logo">
+            <img src="logo-nexoradata.png" alt="NEXORADATA">
         </a>
 
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
+            <a href="#portfolio">Proyectos</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
         </nav>
 
-        <a href="#contacto" class="btn-nav">Hablemos</a>
+        <a href="#contacto" class="btn-nav">
+            Hablemos
+        </a>
 
     </header>
 
 
-    <!-- INICIO -->
+    <!-- =========================
+         INICIO
+    ========================== -->
+
     <section id="inicio" class="hero">
 
         <div class="hero-text">
 
-            <p class="tag">DATA • AUTOMATIZACIÓN • CRECIMIENTO</p>
+            <p class="tag">
+                DATA • AUTOMATIZACIÓN • CRECIMIENTO
+            </p>
 
             <h1>
                 Transformamos datos
@@ -90,7 +101,10 @@
     </section>
 
 
-    <!-- SERVICIOS -->
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+
     <section id="servicios" class="services">
 
         <div class="section-title">
@@ -167,7 +181,10 @@
     </section>
 
 
-    <!-- PORTFOLIO -->
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+
     <section id="portfolio" class="portfolio">
 
         <div class="section-title">
@@ -186,15 +203,21 @@
 
 
             <!-- PROYECTO 1 -->
+
             <div class="portfolio-card">
 
                 <div class="portfolio-visual dashboard-preview">
 
-                    <img src="dashboard-ventas.png" alt="Dashboard de Ventas en Power BI">
+                    <img
+                        src="dashboard-ventas.png"
+                        alt="Dashboard de Ventas en Power BI"
+                    >
 
                 </div>
 
-                <h3>Dashboard de Ventas</h3>
+                <h3>
+                    Dashboard de Ventas
+                </h3>
 
                 <p>
                     Visualización de ventas, productos y evolución
@@ -205,7 +228,10 @@
                     POWER BI • EXCEL
                 </span>
 
-                <a href="proyecto-ventas.html" class="portfolio-link">
+                <a
+                    href="proyecto-ventas.html"
+                    class="portfolio-link"
+                >
                     Ver proyecto →
                 </a>
 
@@ -213,6 +239,7 @@
 
 
             <!-- PROYECTO 2 -->
+
             <div class="portfolio-card">
 
                 <div class="portfolio-visual">
@@ -237,7 +264,9 @@
 
                 </div>
 
-                <h3>Control de Stock</h3>
+                <h3>
+                    Control de Stock
+                </h3>
 
                 <p>
                     Organización del inventario e identificación
@@ -248,11 +277,11 @@
                     EXCEL • SQL
                 </span>
 
-
             </div>
 
 
             <!-- PROYECTO 3 -->
+
             <div class="portfolio-card">
 
                 <div class="portfolio-visual">
@@ -283,7 +312,9 @@
 
                 </div>
 
-                <h3>Automatización de Procesos</h3>
+                <h3>
+                    Automatización de Procesos
+                </h3>
 
                 <p>
                     Automatización de tareas repetitivas para
@@ -294,7 +325,6 @@
                     PYTHON • EXCEL
                 </span>
 
-
             </div>
 
 
@@ -303,7 +333,10 @@
     </section>
 
 
-    <!-- NOSOTROS -->
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+
     <section id="nosotros" class="about">
 
         <div class="about-content">
@@ -327,13 +360,20 @@
 
     </section>
 
-    <!-- CONTACTO -->
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
     <section id="contacto" class="contact">
 
         <div class="contact-content">
 
             <div class="contact-text">
-                <span class="section-tag">CONTACTO</span>
+
+                <span class="section-tag">
+                    CONTACTO
+                </span>
 
                 <h2>
                     ¿Tenés un proyecto
@@ -344,21 +384,47 @@
                     Contanos qué necesitás y nos ponemos en contacto
                     para analizar cómo podemos ayudarte.
                 </p>
+
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/mrpgjbvw" method="POST">
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/mrpgjbvw"
+                method="POST"
+            >
 
                 <div class="form-row">
 
-                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Nombre"
+                        required
+                    >
 
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                    >
 
                 </div>
 
-                <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="6" required></textarea>
 
-                <button type="submit" class="btn-primary">
+                <textarea
+                    name="mensaje"
+                    placeholder="¿En qué podemos ayudarte?"
+                    rows="6"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn-primary"
+                >
                     Enviar mensaje →
                 </button>
 
@@ -367,7 +433,12 @@
         </div>
 
     </section>
-    <!-- FOOTER -->
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <div>
@@ -381,50 +452,79 @@
     </footer>
 
 
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="script.js"></script>
 
-</body>
-<script>
-    const form = document.querySelector(".contact-form");
+    <script>
 
-    form.addEventListener("submit", async function (event) {
-        event.preventDefault();
+        const form = document.querySelector(".contact-form");
 
-        const button = form.querySelector("button");
+        form.addEventListener("submit", async function (event) {
 
-        button.disabled = true;
-        button.textContent = "Enviando...";
+            event.preventDefault();
 
-        const data = new FormData(form);
+            const button = form.querySelector("button");
 
-        try {
-            const response = await fetch(form.action, {
-                method: "POST",
-                body: data,
-                headers: {
-                    "Accept": "application/json"
-                }
-            });
+            button.disabled = true;
+            button.textContent = "Enviando...";
 
-            if (response.ok) {
-                form.reset();
-                button.textContent = "¡Mensaje enviado! ✓";
+            const data = new FormData(form);
 
-                setTimeout(() => {
+            try {
+
+                const response = await fetch(form.action, {
+
+                    method: "POST",
+
+                    body: data,
+
+                    headers: {
+                        "Accept": "application/json"
+                    }
+
+                });
+
+
+                if (response.ok) {
+
+                    form.reset();
+
+                    button.textContent = "¡Mensaje enviado! ✓";
+
+
+                    setTimeout(() => {
+
+                        button.disabled = false;
+
+                        button.textContent = "Enviar mensaje →";
+
+                    }, 4000);
+
+
+                } else {
+
                     button.disabled = false;
-                    button.textContent = "Enviar mensaje →";
-                }, 4000);
 
-            } else {
+                    button.textContent = "Error al enviar";
+
+                }
+
+
+            } catch (error) {
+
                 button.disabled = false;
+
                 button.textContent = "Error al enviar";
+
             }
 
-        } catch (error) {
-            button.disabled = false;
-            button.textContent = "Error al enviar";
-        }
-    });
-</script>
+        });
+
+    </script>
+
+</body>
 
 </html>
