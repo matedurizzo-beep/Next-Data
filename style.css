@@ -46,9 +46,9 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    width: 280px;
+    height: auto;
+    display: block;
 }
 
 .logo span {
@@ -1165,9 +1165,4 @@ footer strong {
 
         text-align: center;
     }
-}
-.logo {
-    width: 280px;
-    height: auto;
-    display: block;
 }
