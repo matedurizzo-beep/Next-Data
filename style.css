@@ -1166,7 +1166,7 @@ footer strong {
         text-align: center;
     }
 }
-.logo img {
+.logo {
     width: 280px;
     height: auto;
     display: block;
