@@ -18,14 +18,15 @@ body {
     color: #ffffff;
 }
 
-
+```css
 /* =========================
    NAVEGACIÓN
 ========================= */
 
 header {
     width: 100%;
-    padding: 22px 8%;
+    height: 80px;
+    padding: 0 8%;
 
     display: flex;
     align-items: center;
@@ -44,31 +45,41 @@ header {
     backdrop-filter: blur(10px);
 }
 
-/* LOGO DE TEXTO */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
+
+/* =========================
+   LOGO
+========================= */
+
+header .logo {
     display: flex;
     align-items: center;
-    width: auto;
-    height: auto;
+
+    width: 120px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
 }
 
-/* LOGO SI ES TEXTO */
-.logo span {
-    color: #20c9c9;
-}
-
-/* LOGO SI ES UNA IMAGEN */
 header .logo img {
-    width: 150px !important;
-    height: auto !important;
-    max-width: 150px !important;
-    max-height: 50px !important;
-    object-fit: contain !important;
     display: block;
+
+    width: 120px !important;
+    height: 55px !important;
+
+    max-width: 120px !important;
+    max-height: 55px !important;
+
+    object-fit: contain;
+
+    object-position: left center;
 }
+
+
+/* =========================
+   MENÚ
+========================= */
 
 nav {
     display: flex;
@@ -86,123 +97,53 @@ nav a:hover {
     color: #20c9c9;
 }
 
+
+/* =========================
+   BOTÓN HABLEMOS
+========================= */
+
 .btn-nav {
     text-decoration: none;
+
     background: #2274e0;
+
     color: white;
+
     padding: 12px 22px;
+
     border-radius: 30px;
+
     transition: 0.3s;
+
+    white-space: nowrap;
 }
 
 .btn-nav:hover {
     transform: translateY(-2px);
+
     background: #20c9c9;
 }
 
 
 /* =========================
-   HERO
+   LOGO EN CELULAR
 ========================= */
 
-.hero {
-    min-height: 100vh;
+@media (max-width: 900px) {
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    header .logo {
+        width: 100px;
+        height: 50px;
+    }
 
-    padding: 140px 10% 80px;
+    header .logo img {
+        width: 100px !important;
+        height: 50px !important;
 
-    gap: 60px;
-
-    background:
-        radial-gradient(
-            circle at 80% 30%,
-            rgba(32, 201, 201, 0.15),
-            transparent 40%
-        ),
-        #07111f;
+        max-width: 100px !important;
+        max-height: 50px !important;
+    }
 }
-
-.hero-text {
-    max-width: 600px;
-}
-
-.tag {
-    color: #20c9c9;
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 64px;
-    line-height: 1.1;
-    margin-bottom: 25px;
-}
-
-.hero h1 span {
-    color: #20c9c9;
-}
-
-.hero-description {
-    font-size: 19px;
-    line-height: 1.7;
-    color: #b8c2cf;
-    margin-bottom: 35px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-
-    background: linear-gradient(
-        90deg,
-        #2274e0,
-        #20c9c9
-    );
-
-    color: white;
-
-    padding: 15px 28px;
-
-    border-radius: 30px;
-
-    transition: 0.3s;
-
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-}
-
-.btn-secondary {
-    display: inline-block;
-    text-decoration: none;
-
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
-    color: white;
-
-    padding: 15px 28px;
-
-    border-radius: 30px;
-
-    transition: 0.3s;
-}
-
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-
 /* =========================
    DASHBOARD VISUAL
 ========================= */
