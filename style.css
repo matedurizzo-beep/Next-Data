@@ -46,11 +46,15 @@ header {
 }
 
 .logo {
-    width: 280px;
-    height: auto;
     display: block;
 }
 
+.logo img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 nav {
     display: flex;
