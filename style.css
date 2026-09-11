@@ -1199,3 +1199,8 @@ footer strong {
     }
 
 }
+header {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+}
